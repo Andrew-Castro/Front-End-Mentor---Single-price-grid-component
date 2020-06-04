@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+*::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px; }
+
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; }
+
+.grid-container {
+  box-shadow: 2px 12px 37px -5px rgba(152, 166, 189, 0.3);
+  width: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 210px 1fr;
+  grid-template-areas: "top top" "bottom-left bottom-right"; }
+  .grid-container .join {
+    border-radius: 6px 6px 0 0;
+    grid-area: top;
+    padding: 40px 65px 25px 40px; }
+    .grid-container .join--title {
+      font-weight: 700;
+      color: #2ab2af;
+      margin-bottom: 25px; }
+    .grid-container .join--subtitle {
+      color: #c0df34;
+      font-weight: 700;
+      margin-bottom: 15px; }
+    .grid-container .join--text {
+      line-height: 1.5;
+      color: #98a6bd; }
+  .grid-container .monthly {
+    border-radius: 0 0 0 6px;
+    grid-area: bottom-left;
+    background-color: #2ab2af;
+    padding: 40px 40px 35px 40px;
+    color: white; }
+    .grid-container .monthly--title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .grid-container .monthly--price-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; }
+      .grid-container .monthly--price-container__dollar {
+        font-size: 30px;
+        font-weight: 700;
+        padding-right: 10px; }
+      .grid-container .monthly--price-container__text {
+        color: #eceff4; }
+    .grid-container .monthly--text {
+      margin-bottom: 30px; }
+    .grid-container .monthly--button {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 6px;
+      border: none;
+      background-color: #c0df34;
+      color: white;
+      box-shadow: 0px 10px 18px -2px rgba(0, 0, 0, 0.15); }
+  .grid-container .whyus {
+    grid-area: bottom-right;
+    background-color: #30cfcc;
+    padding: 40px 40px 25px 40px;
+    color: white;
+    border-radius: 0 0 6px 0; }
+    .grid-container .whyus ul {
+      list-style: none; }
+    .grid-container .whyus li {
+      font-size: 15px;
+      color: #eceff4;
+      margin-bottom: 2px; }
+    .grid-container .whyus--title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px; }
